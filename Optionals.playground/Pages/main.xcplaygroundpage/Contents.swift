@@ -14,7 +14,7 @@
  */
 var pet = "turtle 🐢"
 
-
+print("A string")
 
 
 
@@ -25,7 +25,7 @@ var pet = "turtle 🐢"
 var petName: String?
 
 
-
+print("optional string")
 
 
 
@@ -33,8 +33,8 @@ var petName: String?
  ### 3. Currently, what is the _value_ of `petName`?
  */
 
-
-
+print (petName)
+print("nil")
 
 
 
@@ -44,8 +44,9 @@ var petName: String?
  */
 // write your code here
 
-
-
+petName = "pooch"
+print (petName)
+print("still an optional string")
 
 
 
@@ -55,7 +56,8 @@ var petName: String?
  */
 // write your code here
 
-
+print (petName)
+print("optional then name")
 
 
 
@@ -66,8 +68,11 @@ var petName: String?
  */
 // write your code here
 
+if petName != nil {
+    print(petName)
+}
 
-
+print("expect pet name to print")
 
 
 
@@ -77,9 +82,10 @@ var petName: String?
  */
 // write your code here
 
+if let petName = petName {
+print(petName)
 
-
-
+}
 
 
 
@@ -89,7 +95,11 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
-
+if anotherPetName != nil {
+    print (anotherPetName)
+} else {
+    print ("The value of anotherPetName is nil")
+}
 
 
 
@@ -100,8 +110,11 @@ var anotherPetName: String?
  */
 // write your code here
 
-
-
+if anotherPetName == nil {
+    print("anotherPetName has no value")
+} else {
+    print("\(anotherPetName)")
+}
 
 
 
@@ -113,11 +126,11 @@ var anotherPetName: String?
  */
 // write your code here
 
+let name : String?
+ name = petName
 
-
-
-
-
+// let name = "yellow"
+print(name)
 
 
 
@@ -126,12 +139,9 @@ var anotherPetName: String?
  */
 // write your code here
 
-
-
-
-
-
-
-
+let test: String?
+ test = nil
+//test = done
+print("unable to assign new value after setting to nil before it")
 
 //: Checkout the solution branch, git co solution and come back to this spot to see a link to the solution
